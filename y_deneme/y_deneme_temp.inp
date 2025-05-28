@@ -1,0 +1,215 @@
+[TITLE]
+
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ 1               	1000        	-50         	1               	;
+ 2               	940         	5           	2               	;
+ 3               	940         	1           	                	;
+ 4               	940         	2           	                	;
+ 5               	940         	0           	                	;
+ 6               	940         	5           	                	;
+ 7               	940         	0           	                	;
+ 8               	940         	1           	                	;
+ 9               	940         	1           	                	;
+ 10              	940         	5           	                	;
+ 11              	940         	1           	                	;
+ 12              	940         	1           	                	;
+ 14              	940         	5           	                	;
+ 15              	940         	5           	                	;
+ 16              	940         	5           	                	;
+ 17              	940         	5           	                	;
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve        	Overflow
+ 13              	990         	5           	0           	6.5         	200         	0           	                	;
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ 1               	1               	8               	1000        	200         	130         	0           	Open  	;
+ 2               	8               	9               	1000        	300         	130         	0           	Open  	;
+ 3               	9               	10              	1000        	300         	130         	0           	Open  	;
+ 4               	10              	7               	1000        	100         	130         	0           	Open  	;
+ 5               	2               	7               	1000        	50          	130         	0           	Open  	;
+ 6               	2               	3               	1000        	50          	130         	0           	Open  	;
+ 7               	3               	6               	1000        	300         	130         	0           	Open  	;
+ 8               	6               	11              	1000        	100         	130         	0           	Open  	;
+ 9               	11              	12              	1000        	300         	130         	0           	Open  	;
+ 10              	12              	5               	1000        	300         	130         	0           	Open  	;
+ 11              	5               	4               	1000        	100         	130         	0           	Open  	;
+ 12              	4               	3               	1000        	100         	130         	0           	Open  	;
+ 13              	6               	5               	1000        	300         	130         	0           	Open  	;
+ 15              	7               	6               	1000        	300         	130         	0           	Open  	;
+ 16              	10              	11              	1000        	300         	130         	0           	Open  	;
+ 17              	8               	7               	1000        	300         	130         	0           	Open  	;
+ 18              	12              	13              	1000        	300         	130         	0           	Open  	;
+ 14              	9               	14              	1000        	300         	130         	0           	Open  	;
+ 19              	14              	15              	1000        	100         	130         	0           	Open  	;
+ 20              	15              	16              	1000        	100         	130         	0           	Open  	;
+ 21              	16              	17              	1000        	100         	130         	0           	Open  	;
+ 22              	17              	12              	1000        	100         	130         	0           	Open  	;
+ 23              	11              	16              	1000        	300         	130         	0           	Open  	;
+ 24              	10              	15              	1000        	100         	130         	0           	Open  	;
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+
+[TAGS]
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+
+[PATTERNS]
+;ID              	Multipliers
+;
+ 1               	1           	1           	1           	1           	0           	0           
+ 1               	0           	0           	1           	1           	1           	1           
+ 1               	0           	0           	0           	1           	0           	0           
+ 1               	0           	0           	1           	1           	1           	1           
+ 1               	0           	0           	0           	0           	0           	1           
+ 1               	1           	1           	1           	1           	1           	1           
+ 1               	1           	0           	0           	0           	0           	0           
+ 1               	0           	0           
+;
+ 2               	1           	1           	1           	1           	1           	1           
+ 2               	1           	1           	1           	1           	1           	1           
+ 2               	1           	1           	1           	1           	1           	1           
+ 2               	1           	1           	1           	1           	1           	1           
+
+[CURVES]
+;ID              	X-Value     	Y-Value
+
+[CONTROLS]
+
+
+
+
+
+
+
+[RULES]
+
+
+
+
+
+
+
+[ENERGY]
+ Global Efficiency  	75
+ Global Price       	0
+ Demand Charge      	0
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+ 1               	1
+ 2               	0.2
+ 3               	0.2
+ 4               	0.2
+ 6               	0.2
+ 8               	0.2
+ 9               	0.2
+ 10              	0.2
+ 11              	0.2
+ 12              	0.2
+ 13              	0.1
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+ 1               	CONCEN      	1           	
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+
+
+[REACTIONS]
+ Order Bulk            	1
+ Order Tank            	1
+ Order Wall            	1
+ Global Bulk           	0
+ Global Wall           	0
+ Limiting Potential    	0
+ Roughness Correlation 	0
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	44:00 
+ Hydraulic Timestep 	1:00 
+ Quality Timestep   	0:01 
+ Pattern Timestep   	1:00 
+ Pattern Start      	0:00 
+ Report Timestep    	1:00 
+ Report Start       	0:00 
+ Start ClockTime    	12 am
+ Statistic          	NONE
+
+[REPORT]
+ Status             	No
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	LPS
+ Headloss           	H-W
+ Specific Gravity   	1
+ Viscosity          	1
+ Trials             	40
+ Accuracy           	0.000001
+ CHECKFREQ          	2
+ MAXCHECK           	10
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	1
+ Demand Multiplier  	1.0
+ Emitter Exponent   	0.5
+ Quality            	Chemical mg/L
+ Diffusivity        	1
+ Tolerance          	0.01
+
+[COORDINATES]
+;Node            	X-Coord           	Y-Coord
+1               	854.893           	8065.242          
+2               	3892.013          	8020.247          
+3               	6557.930          	8031.496          
+4               	8920.135          	7986.502          
+5               	9055.118          	6546.682          
+6               	6557.930          	6479.190          
+7               	3655.793          	6400.450          
+8               	562.430           	6310.461          
+9               	483.690           	4341.957          
+10              	3925.759          	4308.211          
+11              	6962.880          	4274.466          
+12              	8886.389          	4296.963          
+14              	539.933           	2755.906          
+15              	4026.997          	2744.657          
+16              	6816.648          	2688.414          
+17              	8920.135          	2609.674          
+13              	10888.639         	4330.709          
+
+[VERTICES]
+;Link            	X-Coord           	Y-Coord
+
+[LABELS]
+;X-Coord             Y-Coord             Label & Anchor Node
+
+[BACKDROP]
+  DIMENSIONS  	0.000             	0.000             	10000.000         	10000.000         
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]

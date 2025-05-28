@@ -1,0 +1,715 @@
+  Page 1                                    Wed Jan 15 14:43:30 2025
+
+******************************************************************
+*                        W A T E R G E M S                       *
+*                   Hydraulic and Water Quality                  *
+*                   Analysis for Pipe Networks                   *
+*                          Version 8.11                          *
+******************************************************************
+
+ 
+    Number of Junctions................ 15
+    Number of Reservoirs............... 1
+    Number of Tanks ................... 0
+    Number of Pipes ................... 20
+    Number of Pumps ................... 0
+    Number of Variable Speed Pumps .... 0
+    Number of Valves .................. 0
+    Headloss Formula .................. Hazen-Williams
+    Hydraulic Timestep ................ 1.00 hrs
+    Hydraulic Accuracy ................ 0.001000
+    Status Check Frequency ............ 2
+    Maximum Trials Checked ............ 10
+    Damping Limit Threshold ........... 0.000000
+    Maximum Trials .................... 40
+    Quality Analysis .................. None
+    Specific Gravity .................. 1.00
+    Relative Kinematic Viscosity ...... 0.98
+    Relative Chemical Diffusivity ..... -769230769230769150.00
+    Demand Multiplier ................. 1.00
+    Total Duration .................... 55.00 hrs
+    Reporting Criteria:
+       No Nodes
+       No Links
+ 
+[Analysis Started]
+Wed Jan 15 14:43:30 2025
+
+[0:00:00]
+<   0:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.958777
+         Trial  2: relative flow change = 0.094520
+         Trial  3: relative flow change = 0.002396
+         Trial  4: relative flow change = 0.000062
+<   0:00:00 Balanced after 4 trials; relative flow change = 0.000062>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+   0:00:00 Reservoir 46 is filling
+ 
+Info 0:00:00: Negative pressures.
+
+[1:00:00]
+<   1:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000001
+<   1:00:00 Balanced after 1 trials; relative flow change = 0.000001>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 1:00:00: Negative pressures.
+
+[2:00:00]
+<   2:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<   2:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 2:00:00: Negative pressures.
+
+[3:00:00]
+<   3:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<   3:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 3:00:00: Negative pressures.
+
+[4:00:00]
+<   4:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<   4:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 4:00:00: Negative pressures.
+
+[5:00:00]
+<   5:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<   5:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 5:00:00: Negative pressures.
+
+[6:00:00]
+<   6:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<   6:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 6:00:00: Negative pressures.
+
+[7:00:00]
+<   7:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<   7:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 7:00:00: Negative pressures.
+
+[8:00:00]
+<   8:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<   8:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 8:00:00: Negative pressures.
+
+[9:00:00]
+<   9:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<   9:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 9:00:00: Negative pressures.
+
+[10:00:00]
+<  10:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  10:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 10:00:00: Negative pressures.
+
+[11:00:00]
+<  11:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  11:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 11:00:00: Negative pressures.
+
+[12:00:00]
+<  12:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  12:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 12:00:00: Negative pressures.
+
+[13:00:00]
+<  13:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  13:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 13:00:00: Negative pressures.
+
+[14:00:00]
+<  14:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  14:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 14:00:00: Negative pressures.
+
+[15:00:00]
+<  15:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  15:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 15:00:00: Negative pressures.
+
+[16:00:00]
+<  16:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  16:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 16:00:00: Negative pressures.
+
+[17:00:00]
+<  17:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  17:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 17:00:00: Negative pressures.
+
+[18:00:00]
+<  18:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  18:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 18:00:00: Negative pressures.
+
+[19:00:00]
+<  19:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  19:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 19:00:00: Negative pressures.
+
+[20:00:00]
+<  20:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  20:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 20:00:00: Negative pressures.
+
+[21:00:00]
+<  21:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  21:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 21:00:00: Negative pressures.
+
+[22:00:00]
+<  22:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  22:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 22:00:00: Negative pressures.
+
+[23:00:00]
+<  23:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  23:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 23:00:00: Negative pressures.
+
+[24:00:00]
+<  24:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  24:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 24:00:00: Negative pressures.
+
+[25:00:00]
+<  25:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  25:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 25:00:00: Negative pressures.
+
+[26:00:00]
+<  26:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  26:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 26:00:00: Negative pressures.
+
+[27:00:00]
+<  27:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  27:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 27:00:00: Negative pressures.
+
+[28:00:00]
+<  28:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  28:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 28:00:00: Negative pressures.
+
+[29:00:00]
+<  29:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  29:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 29:00:00: Negative pressures.
+
+[30:00:00]
+<  30:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  30:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 30:00:00: Negative pressures.
+
+[31:00:00]
+<  31:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  31:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 31:00:00: Negative pressures.
+
+[32:00:00]
+<  32:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  32:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 32:00:00: Negative pressures.
+
+[33:00:00]
+<  33:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  33:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 33:00:00: Negative pressures.
+
+[34:00:00]
+<  34:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  34:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 34:00:00: Negative pressures.
+
+[35:00:00]
+<  35:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  35:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 35:00:00: Negative pressures.
+
+[36:00:00]
+<  36:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  36:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 36:00:00: Negative pressures.
+
+[37:00:00]
+<  37:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  37:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 37:00:00: Negative pressures.
+
+[38:00:00]
+<  38:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  38:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 38:00:00: Negative pressures.
+
+[39:00:00]
+<  39:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  39:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 39:00:00: Negative pressures.
+
+[40:00:00]
+<  40:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  40:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 40:00:00: Negative pressures.
+
+[41:00:00]
+<  41:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  41:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 41:00:00: Negative pressures.
+
+[42:00:00]
+<  42:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  42:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 42:00:00: Negative pressures.
+
+[43:00:00]
+<  43:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  43:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 43:00:00: Negative pressures.
+
+[44:00:00]
+<  44:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  44:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 44:00:00: Negative pressures.
+
+[45:00:00]
+<  45:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  45:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 45:00:00: Negative pressures.
+
+[46:00:00]
+<  46:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  46:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 46:00:00: Negative pressures.
+
+[47:00:00]
+<  47:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  47:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 47:00:00: Negative pressures.
+
+[48:00:00]
+<  48:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  48:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 48:00:00: Negative pressures.
+
+[49:00:00]
+<  49:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  49:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 49:00:00: Negative pressures.
+
+[50:00:00]
+<  50:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  50:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 50:00:00: Negative pressures.
+
+[51:00:00]
+<  51:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  51:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 51:00:00: Negative pressures.
+
+[52:00:00]
+<  52:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  52:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 52:00:00: Negative pressures.
+
+[53:00:00]
+<  53:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  53:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 53:00:00: Negative pressures.
+
+[54:00:00]
+<  54:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  54:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 54:00:00: Negative pressures.
+
+[55:00:00]
+<  55:00:00 Balancing the network:>
+         Trial  1: relative flow change = 0.000000
+<  55:00:00 Balanced after 1 trials; relative flow change = 0.000000>
+<Flow Summary>
+Flow Supplied 1585.03 gpm
+Flow Demanded 1109.52 gpm
+Flow Stored 475.51 gpm
+<Flow Summary>
+ 
+Info 55:00:00: Negative pressures.
+
+[Analysis Ended]
+Wed Jan 15 14:43:30 2025
