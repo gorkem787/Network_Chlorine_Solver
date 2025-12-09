@@ -60,9 +60,6 @@ a.plot_with_epanet(save=False)
 - For now, you can use with 1 reservoir and 1 pump.
 
 
-## 📄 License
-
-You can use any open-source license of your choice (e.g., MIT, GPLv3).
 
 ---
 
