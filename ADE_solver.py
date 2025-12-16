@@ -50,9 +50,9 @@ def main(t, x, x_source, source_t, a, b, U, D, K, Co, diameter):
     
     A_sum = (A(x, t, ti, -1, a, b, U, D, K) + A(x, t, ti, 1, a, b, U, D, K) - 
              A(x, t, ti2, -1, a, b, U, D, K) - A(x, t, ti2, 1, a, b, U, D, K))
-    
-    B_sum = (2 * B(0, t, 0, U, D, K, Co) - B(x, t, -1, U, D, K, Co) - B(x, t, 1, U, D, K, Co))
-    
+    dt = ti2 - ti
+    B_sum = (2 * B(0, dt, 0, U, D, K, Co) - B(x, dt, -1, U, D, K, Co) - B(x, dt, 1, U, D, K, Co))
+
     C = A_sum + B_sum
     return C
 
