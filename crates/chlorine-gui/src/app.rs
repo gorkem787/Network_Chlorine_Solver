@@ -187,11 +187,11 @@ impl App {
             ui.label("Scheme");
             egui::ComboBox::from_id_salt("scheme")
                 .selected_text(match self.params.scheme {
-                    Scheme::Analytic => "Analytic (Mazaheri et al.)",
+                    Scheme::Analytic => "Analytic",
                     Scheme::Legacy => "Legacy (Python)",
                 })
                 .show_ui(ui, |ui| {
-                    ui.selectable_value(&mut self.params.scheme, Scheme::Analytic, "Analytic (Mazaheri et al.)");
+                    ui.selectable_value(&mut self.params.scheme, Scheme::Analytic, "Analytic");
                     ui.selectable_value(&mut self.params.scheme, Scheme::Legacy, "Legacy (Python)");
                 });
             ui.end_row();

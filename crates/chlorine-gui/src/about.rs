@@ -1,4 +1,4 @@
-//! About window: version, license, method citation and third-party notices.
+//! About window: version, license and third-party notices.
 
 use eframe::egui::{self, RichText};
 
@@ -6,10 +6,6 @@ const LICENSE: &str = include_str!("../../../LICENSE");
 const THIRD_PARTY: &str = include_str!("../../../THIRD_PARTY_LICENSES.txt");
 
 pub const COPYRIGHT: &str = "Copyright (C) 2024-2026 Gorkem Bora Candan";
-
-pub const CITATION: &str = "Mazaheri, M., Samani, J. M. V., & Samani, H. M. V. (2013). Analytical solution to \
-one-dimensional advection-diffusion equation with several point sources through arbitrary time-dependent \
-emission rate patterns. Journal of Agricultural Science and Technology, 15, 1231-1245.";
 
 #[derive(Default, PartialEq, Clone, Copy)]
 enum Tab {
@@ -64,8 +60,7 @@ fn about_tab(ui: &mut egui::Ui) {
 
     ui.add_space(10.0);
     ui.label(RichText::new("Method").strong());
-    ui.label("Pipe transport uses the analytical solution of the advection-dispersion-reaction equation by:");
-    ui.label(RichText::new(CITATION).italics());
+    ui.label("Pipe transport uses an analytical solution of the one-dimensional advection-dispersion-reaction equation.");
     ui.add_space(6.0);
     ui.label(RichText::new("Hydraulics").strong());
     ui.label("Hydraulic and reference water quality results are computed with EPANET 2.2 (MIT License).");
