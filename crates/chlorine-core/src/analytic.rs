@@ -1,4 +1,4 @@
-//! Pipe transport following Mazaheri et al. (2013) with time-varying velocity.
+//! Analytical pipe transport (see README, References) with time-varying velocity.
 //!
 //! Velocity in a pipe is piecewise constant in time (one value per hydraulic
 //! period). Within a period the concentration anywhere in the pipe is, exactly,

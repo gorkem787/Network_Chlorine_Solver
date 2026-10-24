@@ -12,8 +12,7 @@ use clap::{Parser, ValueEnum};
 #[command(
     name = "chlorine",
     version,
-    after_help = "Method: Mazaheri, Samani & Samani (2013), J. Agr. Sci. Tech. 15:1231-1245.\n\
-                  Copyright (C) 2024-2026 Gorkem Bora Candan. License GPL-3.0-or-later: <https://gnu.org/licenses/gpl.html>.\n\
+    after_help = "Copyright (C) 2024-2026 Gorkem Bora Candan. License GPL-3.0-or-later: <https://gnu.org/licenses/gpl.html>.\n\
                   This is free software with ABSOLUTELY NO WARRANTY. Third-party notices: THIRD_PARTY_LICENSES.txt."
 )]
 struct Args {

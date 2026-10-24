@@ -1,4 +1,4 @@
-//! Compares both pipe schemes with the exact Mazaheri et al. (2013) solution
+//! Compares both pipe schemes with the exact analytical solution (README, References)
 //! (Eq. 16: superposition over the whole source history) for a single pipe
 //! with constant velocity.
 //!

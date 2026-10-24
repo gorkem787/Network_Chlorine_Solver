@@ -15,7 +15,7 @@ use crate::network::{Hydraulics, Network};
 /// How concentration is carried through a pipe.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Scheme {
-    /// Mazaheri et al. (2013) Eq. 16 applied to the whole pipe, restarted from
+    /// The analytical solution's Eq. 16 (README, References) applied to the whole pipe, restarted from
     /// the actual in-pipe profile only when the velocity changes.
     #[default]
     Analytic,

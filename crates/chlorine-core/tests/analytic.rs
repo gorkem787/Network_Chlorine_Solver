@@ -1,4 +1,4 @@
-//! Accuracy tests for the analytic (Mazaheri et al. 2013) pipe scheme.
+//! Accuracy tests for the analytic pipe scheme.
 
 use chlorine_core::special::exp_erfc;
 use chlorine_core::*;
@@ -40,7 +40,7 @@ fn run(
     simulate(&single_pipe(length, c0), &hyd, &settings).unwrap().node_quality[1].clone()
 }
 
-// ---- Exact solution, Mazaheri et al. (2013) Eqs. 14-16, absolute times ----
+// ---- Exact solution, Eqs. 14-16 of the reference in the README, absolute times ----
 
 fn a_term(x: f64, t: f64, ti: f64, m: f64, a: f64, b: f64, u: f64, d: f64, k: f64) -> f64 {
     if t <= ti {
