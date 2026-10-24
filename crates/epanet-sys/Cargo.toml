@@ -5,6 +5,7 @@ version.workspace = true
 edition.workspace = true
 license = "MIT"
 authors.workspace = true
+publish = false
 links = "epanet2"
 
 [build-dependencies]

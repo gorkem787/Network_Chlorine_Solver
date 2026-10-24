@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/chlorine-core", "crates/epanet-sys", "crates/chlorine-epanet", "crates/chlorine-cli"]
+members = ["crates/chlorine-core", "crates/epanet-sys", "crates/chlorine-epanet", "crates/chlorine-cli", "crates/chlorine-gui"]
 
 [workspace.package]
 version = "0.1.0"

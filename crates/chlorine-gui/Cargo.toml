@@ -1,0 +1,19 @@
+[package]
+name = "chlorine-gui"
+description = "Desktop application for chlorine decay simulation in EPANET networks"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+publish = false
+
+[[bin]]
+name = "chlorine-gui"
+path = "src/main.rs"
+
+[dependencies]
+chlorine-core = { path = "../chlorine-core" }
+chlorine-epanet = { path = "../chlorine-epanet" }
+eframe = "0.37"
+egui_plot = "0.38"
+rfd = "0.17"

@@ -1,17 +1,21 @@
-use std::fs::File;
-use std::io::{BufWriter, Write};
 use std::path::PathBuf;
 use std::process::ExitCode;
 use std::time::Instant;
 
-use chlorine_core::{simulate, Dispersion, NodeKind, Scheme, Settings};
-use chlorine_epanet::{load, LoadOptions};
+use chlorine_core::{simulate, Dispersion, Scheme, Settings};
+use chlorine_epanet::{load, report, LoadOptions};
 use clap::{Parser, ValueEnum};
 
 /// Simulates chlorine transport, dispersion and decay in an EPANET network and
 /// compares the result with EPANET's own water quality simulation.
 #[derive(Parser, Debug)]
-#[command(name = "chlorine", version)]
+#[command(
+    name = "chlorine",
+    version,
+    after_help = "Method: Mazaheri, Samani & Samani (2013), J. Agr. Sci. Tech. 15:1231-1245.\n\
+                  Copyright (C) 2024-2026 Gorkem Bora Candan. License GPL-3.0-or-later: <https://gnu.org/licenses/gpl.html>.\n\
+                  This is free software with ABSOLUTELY NO WARRANTY. Third-party notices: THIRD_PARTY_LICENSES.txt."
+)]
 struct Args {
     /// EPANET input file (.inp).
     input: PathBuf,
@@ -143,47 +147,24 @@ fn run(args: Args) -> Result<(), Box<dyn std::error::Error>> {
 
     println!();
     println!("{:<12} {:<10} {:>10} {:>10} {:>10} {:>10}", "node", "kind", "final", "EPANET", "RMSE", "max |Δ|");
-    let (mut sq_sum, mut count) = (0.0, 0usize);
-    for (n, node) in net.nodes.iter().enumerate() {
-        let model = &results.node_quality[n];
-        let reference = &loaded.reference[n];
-        let diffs = model.iter().zip(reference).map(|(a, b)| a - b);
-        let (sq, max) = diffs.fold((0.0, 0.0f64), |(s, m), d| (s + d * d, m.max(d.abs())));
-        let rmse = (sq / model.len() as f64).sqrt();
-        let is_boundary = loaded.hydraulics.boundary[n].is_some();
-        if !is_boundary {
-            sq_sum += sq;
-            count += model.len();
-        }
-        let kind = match (node.kind, is_boundary) {
-            (NodeKind::Reservoir, _) => "reservoir",
-            (NodeKind::Tank, _) => "tank",
-            (NodeKind::Junction, true) => "source",
-            (NodeKind::Junction, false) => "junction",
-        };
+    let stats = report::node_stats(&loaded, &results);
+    for (node, s) in net.nodes.iter().zip(&stats) {
         println!(
             "{:<12} {:<10} {:>10.4} {:>10.4} {:>10.4} {:>10.4}",
             node.id,
-            kind,
-            model.last().unwrap(),
-            reference.last().unwrap(),
-            rmse,
-            max
+            s.role.label(),
+            s.final_model,
+            s.final_epanet,
+            s.rmse,
+            s.max_abs_diff
         );
     }
-    if count > 0 {
-        println!("\noverall RMSE over computed nodes: {:.4} mg/L", (sq_sum / count as f64).sqrt());
+    if let Some(rmse) = report::overall_rmse(&stats) {
+        println!("\noverall RMSE over computed nodes: {rmse:.4} mg/L");
     }
 
     if let Some(path) = &args.out {
-        let mut w = BufWriter::new(File::create(path)?);
-        writeln!(w, "node_id,time_h,model,epanet")?;
-        for (n, node) in net.nodes.iter().enumerate() {
-            for (k, t) in results.times.iter().enumerate() {
-                writeln!(w, "{},{},{},{}", node.id, t / 3600.0, results.node_quality[n][k], loaded.reference[n][k])?;
-            }
-        }
-        w.flush()?;
+        report::write_csv(path, &loaded, &results)?;
         println!("wrote {}", path.display());
     }
     Ok(())

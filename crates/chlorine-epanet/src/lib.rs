@@ -3,6 +3,7 @@
 //! uniform time grid.
 
 mod project;
+pub mod report;
 
 use std::path::Path;
 
