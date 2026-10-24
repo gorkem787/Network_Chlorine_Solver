@@ -1,0 +1,9 @@
+[package]
+name = "chlorine-core"
+description = "Advection-dispersion-reaction solver for chlorine transport in water distribution networks"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]

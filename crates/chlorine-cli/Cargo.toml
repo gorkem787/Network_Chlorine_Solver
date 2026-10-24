@@ -1,0 +1,16 @@
+[package]
+name = "chlorine-cli"
+description = "Command-line chlorine decay simulation for EPANET networks"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "chlorine"
+path = "src/main.rs"
+
+[dependencies]
+chlorine-core = { path = "../chlorine-core" }
+chlorine-epanet = { path = "../chlorine-epanet" }
+clap = { version = "4.5", features = ["derive"] }

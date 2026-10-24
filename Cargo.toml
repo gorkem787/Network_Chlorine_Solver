@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+members = ["crates/chlorine-core", "crates/epanet-sys", "crates/chlorine-epanet", "crates/chlorine-cli"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+authors = ["gorkem787"]
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

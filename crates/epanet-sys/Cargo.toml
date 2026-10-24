@@ -1,0 +1,11 @@
+[package]
+name = "epanet-sys"
+description = "Raw FFI bindings to the EPANET 2.2 toolkit, built from source"
+version.workspace = true
+edition.workspace = true
+license = "MIT"
+authors.workspace = true
+links = "epanet2"
+
+[build-dependencies]
+cc = "1.2"

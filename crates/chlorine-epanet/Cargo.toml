@@ -1,0 +1,11 @@
+[package]
+name = "chlorine-epanet"
+description = "Loads EPANET networks and hydraulic results into chlorine-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+chlorine-core = { path = "../chlorine-core" }
+epanet-sys = { path = "../epanet-sys" }
